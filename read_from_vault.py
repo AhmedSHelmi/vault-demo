@@ -27,7 +27,7 @@ def read_path_secrets(path):
          "password" : "password"
       },
       "metadata":{
-         "created_time":"2021-12-02T07:34:58.187639Z",
+         "created_time":"2022-11-22T07:34:58.187639Z",
          "custom_metadata":"None",
          "deletion_time":"",
          "destroyed":false,
@@ -44,11 +44,11 @@ def read_path_secrets(path):
     return secrets
 
 
-# read_secret(new/ahmed)
+# read_path_secrets("new/ahmed")
 
-def read_a_certain_secret(key):
+def read_a_certain_secret(path, key):
     """
     reads a single secret from vault
 
     """
-    return read_path_secrets()[key]
+    return read_path_secrets(path)[key]
